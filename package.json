@@ -1,54 +1,23 @@
 {
-  "name": "gatsby-starter-netlify-cms",
-  "description": "Example Gatsby, and Netlify CMS project",
-  "version": "1.1.3",
-  "author": "Austin Green",
-  "dependencies": {
-    "bulma": "^0.9.0",
-    "gatsby": "^4.0.0",
-    "gatsby-plugin-image": "^2.0.0",
-    "gatsby-plugin-netlify": "^3.14.0",
-    "gatsby-plugin-netlify-cms": "^6.0.0",
-    "gatsby-plugin-purgecss": "^6.0.0",
-    "gatsby-plugin-react-helmet": "^5.0.0",
-    "gatsby-plugin-sass": "^5.0.0",
-    "gatsby-plugin-sharp": "^4.0.0",
-    "gatsby-remark-copy-linked-files": "^5.0.0",
-    "gatsby-remark-images": "^6.0.0",
-    "gatsby-remark-relative-images": "^0.3.0",
-    "gatsby-source-filesystem": "^4.0.0",
-    "gatsby-transformer-remark": "^5.0.0",
-    "gatsby-transformer-sharp": "^4.0.0",
-    "lodash": "^4.17.15",
-    "lodash-webpack-plugin": "^0.11.4",
-    "netlify-cms-app": "^2.15.63",
-    "netlify-cms-media-library-cloudinary": "^1.3.10",
-    "netlify-cms-media-library-uploadcare": "^0.5.10",
-    "prop-types": "^15.6.0",
-    "react": "^17.0.0",
-    "react-dom": "^17.0.0",
-    "react-helmet": "^6.0.0",
-    "sass": "^1.43.2",
-    "uuid": "^8.0.0"
-  },
-  "keywords": [
-    "gatsby"
-  ],
+  "name": "blog",
+  "version": "0.0.2",
+  "description": "blog, A simple theme using Tailwind CSS.",
+  "main": "index.js",
+  "repository": "https://github.com/",
+  "author": "akitoshi",
   "license": "MIT",
-  "main": "n/a",
   "scripts": {
-    "clean": "gatsby clean",
-    "start": "npm run develop",
-    "build": "npm run clean && gatsby build",
-    "develop": "npm run clean && gatsby develop",
-    "serve": "gatsby serve",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "concurrently npm:watch:*",
+    "watch:tw": "tailwindcss -i ./themes/blog/assets/css/main.css -o ./themes/blog/assets/css/style.css --watch",
+    "watch:hugo": "hugo server",
+    "build": "tailwindcss -i ./themes/blog/assets/css/main.css -o ./themes/blog/assets/css/style.css && hugo --minify"
   },
   "devDependencies": {
-    "prettier": "^2.0.5"
-  },
-  "engines": {
-    "node": ">= 14.15.0"
+    "@tailwindcss/typography": "^0.5.2",
+    "autoprefixer": "^10.4.2",
+    "concurrently": "^7.0.0",
+    "postcss": "^8.4.7",
+    "postcss-cli": "^9.1.0",
+    "tailwindcss": "^3.0.23"
   }
 }
