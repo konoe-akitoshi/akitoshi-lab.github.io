@@ -7,6 +7,10 @@ enableInlineShortcodes = true
 theme = "blog"
 enableRobotsTXT = true
 
+# Github Pages用設定
+canonifyurls = true
+publishDir = "docs"
+
 # Please enable this feature if the site is available in Japanese, Chinese or Korean.
 #hasCJKLanguage = true
 
