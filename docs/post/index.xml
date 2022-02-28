@@ -1,2 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Akitoshi Lab.</title><link>http://akitoshi-lab.com/akitoshi-lab/post/</link><description>Recent content in Posts on Akitoshi Lab.</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Sun, 27 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://akitoshi-lab.com/akitoshi-lab/post/index.xml" rel="self" type="application/rss+xml"/><item><title>kicadでの不具合</title><link>http://akitoshi-lab.com/akitoshi-lab/post/2022-02-23-kicad/</link><pubDate>Sun, 27 Feb 2022 00:00:00 +0000</pubDate><guid>http://akitoshi-lab.com/akitoshi-lab/post/2022-02-23-kicad/</guid><description>kicad6でうまくSTEPファイルが出力できない時は
-”似た名前のモデルを置換します”にcheckが入ってるかを確認． 参考：https://forum.kicad.info/t/step-kicad-6-in-step-file-only-pcboard-without-3d-models/33566/3</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Akitoshi Lab.</title>
+    <link>http://akitoshi-lab.com/akitoshi-lab/post/</link>
+    <description>Recent content in Posts on Akitoshi Lab.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sun, 27 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://akitoshi-lab.com/akitoshi-lab/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>kicadでの不具合</title>
+      <link>http://akitoshi-lab.com/akitoshi-lab/post/2022-02-23-kicad/</link>
+      <pubDate>Sun, 27 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://akitoshi-lab.com/akitoshi-lab/post/2022-02-23-kicad/</guid>
+      <description>kicad6でうまくSTEPファイルが出力できない時は
+”似た名前のモデルを置換します”にcheckが入ってるかを確認． 参考：https://forum.kicad.info/t/step-kicad-6-in-step-file-only-pcboard-without-3d-models/33566/3</description>
+    </item>
+    
+  </channel>
+</rss>
